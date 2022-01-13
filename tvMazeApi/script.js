@@ -4,7 +4,7 @@ const inputValue = document.querySelector('.inputSearch');
 const btnSearch = document.querySelector('.btnSearch');
 const result = document.querySelector('.result');
 const infoBtn = document.querySelector('.fa-book-open')
-let description = document.querySelector('.movie__description')
+
 
 const getInfoById = (id) => {
     fetch(`https://api.tvmaze.com/shows/${id}`)
@@ -57,7 +57,6 @@ const getAllFilms = function () {
 
 getAllFilms()
 // infoBtn.addEventListener('click',getInfo)
-
 
 const apiCall = function () {
     fetch(`https://api.tvmaze.com/search/shows?q=${inputValue.value}`)
